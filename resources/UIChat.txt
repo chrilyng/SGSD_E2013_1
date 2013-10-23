@@ -1,0 +1,427 @@
+ppechat
+Davide Bianchi forlod gruppechatten.
+	
+Mike Stimson	13.14
+settings in the top right
+default sound
+devices and things
+USER_Ivan Chen deltager i gruppechatten.
+USER_Aidan Snoswell deltager i gruppechatten.
+	
+Luca Buratti	13.17
+since we all seem to have comunicatino problem I suggest to continue this conversatino via chat
+	
+César Cornejo	13.18
+yes we can't hear very well
+USER_Sergai Person deltager i gruppechatten.
+Du har deaktiveret lyden fra César Cornejo.
+	
+Mike Stimson	13.18
+plug in headphones
+Skriv "/?" for at få vist alle tilgængelige kommandoer.
+	
+César Cornejo	13.19
+we dont have
+	
+Mike Stimson	13.19
+ah well
+	
+Luca Buratti	13.19
+what about chat?
+It's very hard to comunicate in this way
+	
+César Cornejo	13.20
+continue we gonna try hear you
+	
+mig	13.20
+I asked about difference in board sides
+Mike will explain in text?
+	
+Mike Stimson	13.20
+ok
+	
+César Cornejo	13.21
+ok
+	
+Mike Stimson	13.21
+the wonderboards are the playmats for each player
+they provide a bonus reasource
+and have stages which can be reaserched
+each stage of research provides some sort of bonus
+each wonder has an a side and a b side
+the sides provide different resources and different bonus for researching stages
+	
+mig	13.22
+luca can you please turn up microphone volume?
+	
+Mike Stimson	13.22
+the b side is generally more complicated and for advanced players
+	
+Luca Buratti	13.22
+ok wait a second becouse if we continue like this it's crazy to understand what we are doing.
+	
+Mike Stimson	13.23
+it helps to think of a side and b side as two seperate wonder boards because u don't switch between them in one game
+	
+Luca Buratti	13.23
+try to fix some steps
+	
+mig	13.23
+cesar you are little to loud
+	
+César Cornejo	13.23
+ok
+	
+Luca Buratti	13.23
+e.g. 1st assign role
+2nd question from each team
+and 3rd misc.
+	
+César Cornejo	13.24
+we agree
+	
+Mike Stimson	13.24
+sure
+	
+mig	13.24
+ok
+	
+Luca Buratti	13.24
+so we have to develop: AI, GUI, logic and network
+	
+mig	13.24
+we would like to do Logic
+(ITU)
+	
+Luca Buratti	13.24
+and 2 of them must be done by one group
+	
+César Cornejo	13.25
+we too want the logic
+	
+Luca Buratti	13.25
+we suggest to: 1 group logic, 1 group AI and 1 group gui + network since network is partially complete as I can understand
+we would like to develop AI
+what do you think about that?
+	
+César Cornejo	13.26
+it's ok
+	
+Luca Buratti	13.26
+nice
+	
+César Cornejo	13.27
+we need to agree about the logic and gui
+	
+mig	13.27
+how about Adelaide picks a number between 1 and 10! closest gets logic
+	
+Luca Buratti	13.27
+ok let's try to understand the complexity of each part
+	
+Mike Stimson	13.28
+is there any real way to choose? how many members does each group have?
+	
+Luca Buratti	13.28
+Tio Cuarto u are in 5 right?
+*rio
+	
+César Cornejo	13.28
+yes
+	
+Luca Buratti	13.28
+and ITU just 4 right?
+	
+mig	13.28
+we are 4 in ITU
+	
+Luca Buratti	13.28
+ok, which is the hardest part?
+	
+Mike Stimson	13.29
+debatable :/
+	
+César Cornejo	13.29
+we don't have experience in gui and many in logic
+	
+Luca Buratti	13.29
+i think that the hardest part should be done by RIO Cuarto
+	
+César Cornejo	13.29
+why?
+	
+Luca Buratti	13.29
+beacause you are in 5
+in team
+we are in 3
+and ITU 4
+	
+mig	13.29
+ITU will take the high road and take GUI + Network
+	
+César Cornejo	13.30
+it is a ewA
+OK
+so:
+	
+mig	13.30
+ok, so that is settled. Perhaps now to questions about the SRS, what will the asking order be?4
+	
+Luca Buratti	13.30
+ok so now that we know what are we going to do
+we can discuss question separately
+	
+César Cornejo	13.31
+so, Rio Cuarto: logic?
+	
+Luca Buratti	13.31
+yes
+	
+César Cornejo	13.31
+itu:gui+network?
+and milan: AI?
+	
+Luca Buratti	13.31
+an Milano AI
+	
+César Cornejo	13.31
+ok
+we agree
+	
+Luca Buratti	13.32
+ok now
+	
+César Cornejo	13.32
+continue whit opinions and changes in srs??
+	
+Luca Buratti	13.32
+first GUI+network question
+then AI question
+and finally logic question
+	
+César Cornejo	13.32
+ok
+	
+Luca Buratti	13.33
+after questino let's try to review and correct SRS
+	
+César Cornejo	13.33
+we agree
+	
+Luca Buratti	13.33
+ITU your move
+	
+Mike Stimson	13.33
+sure
+	
+mig	13.33
+can we agree about some repository where we share resources (images) or we just put it in Github?
+if so we need the images?
+	
+Luca Buratti	13.34
+we agree but we don't know if is it legal for dose porject to use separate repositories
+	
+César Cornejo	13.35
+the same of Luca
+	
+Mike Stimson	13.35
+we will upload visual resources to github soon
+or solve the problem some other way
+the images are really large
+but it will be our responsibility to supply the images
+	
+mig	13.36
+https://github.com/DOSE-ETH/dose2013.git/src/dose/group_01 for everything?
+USER_Luca Buratti deltager i gruppechatten.
+Luca Buratti forlod gruppechatten.
+	
+mig	13.38
+the network architecture is just client/server? with game state saved on server?
+the host player being the server
+Luca Buratti forlod gruppechatten.
+	
+Mike Stimson	13.38
+the requirements specify online multiplayer at the moment
+but that may change
+depending on how much of the networking is done for us
+it would be too much work to do that from scratch
+	
+Aidan Snoswell	13.40
+the architecture would probably be client/server. We should probably add that as a requirement
+	
+mig	13.40
+are there any requirements for integrity for the game clients to avoid "hacking"?
+USER_Luca Buratti deltager i gruppechatten.
+	
+mig	13.41
+(security related)
+	
+Sergai Person	13.41
+requirement NFR003, page 65
+	
+Luca Buratti	13.41
+back
+	
+Sergai Person	13.42
+Sorry, I meant page 64
+	
+Luca Buratti	13.42
+sorry connection issues
+	
+mig	13.42
+ok thx
+but can you only see the neighbors boards and noone elses?
+	
+Mike Stimson	13.44
+you can see every board
+	
+Aidan Snoswell	13.44
+probably not all the time though, they wouldn't fit on the screen
+	
+Mike Stimson	13.44
+however since u can only trade
+with your neighbors
+	
+mig	13.45
+next group for questions
+	
+César Cornejo	13.45
+about GUI requeriments, we disagree with the next requeriments: GUIEM(separate coins into silver and golden coins isn't necesary),GUIET (isn´t necesary show divide the combats coins, only show as combate coins), GUIEB(isn´t necesary to show a back of a card).what do you think about this?
+	
+mig	13.45
+thanks for the answers :)
+	
+Aidan Snoswell	13.45
+The back of the cards are kinda important for showing that stages of a wonder have been built
+	
+Luca Buratti	13.46
+can you explain this more in depth please?
+	
+Mike Stimson	13.46
+the coins dont need the gold and silver denominations we agree
+	
+Aidan Snoswell	13.47
+When you build a stage of a wonder, you place a card face down under that stage to show it's been built
+you could use some other mechanism and do away with the backs of the cards, though
+	
+Luca Buratti	13.47
+ok but this is a physical actino can't we just mark it somehow?
+with an integer maybe?
+Stage lvl 1,2,3,-
+	
+Aidan Snoswell	13.48
+you could
+it's kinda nice to see exactly the stages that have been built though, because they can have useful effects
+maybe highlighting them as you build them?
+	
+Luca Buratti	13.49
+ok so we can say that we have to highliht somehow which is the current stage of the wonder. the mecanism is choosen by GUI developer group
+	
+Mike Stimson	13.49
+sure
+	
+Aidan Snoswell	13.50
+yep
+	
+César Cornejo	13.50
+ok, we agree
+	
+mig	13.50
+sorry, I have a question about GUISP. How do you choose neighbor? You see their board and name?
+	
+César Cornejo	13.53
+we think that every player location must be random because if they can choose brings some problems
+	
+Aidan Snoswell	13.53
+yeah, we're just discussing that seperately
+	
+Sergai Person	13.53
+You can decide how the neighbours will be chosen, however before the start of the game, each player must know about what players will be their neighbour
+	
+César Cornejo	13.53
+ok
+	
+Mike Stimson	13.54
+the important part is being able to see all the other player's board state
+	
+Aidan Snoswell	13.54
+and where the other players are (as in, who's neighbours with who)
+César Cornejo har inviteret personer til at deltage i videoopkaldet.
+	
+Mike Stimson	13.56
+any more gui questions?
+	
+Luca Buratti	13.57
+We think there is a major structural problem, the requiremens GUIAT, GUIAEB, GUIAET should be in the logic part instead of GUI.
+	
+mig	13.57
+before we go on, I guess our group needs to do changes to the SRS document regarding GUI/Network for sunday?
+	
+Luca Buratti	13.58
+no as far as we know is adelaide that have to update SRS
+	
+mig	13.58
+I mean we agree on this...
+	
+Luca Buratti	13.59
+we have no more question on GUI
+	
+César Cornejo	14.00
+guieb it's no problem we do that with a feature
+	
+Mike Stimson	14.00
+those gui requirements deal with the GUI side of implementing those functionalities. The logic underneath is addressed in the logic section
+	
+Luca Buratti	14.01
+where?
+	
+Mike Stimson	14.01
+the logic of GUIAT is addressed in LTBR page 13
+	
+Aidan Snoswell	14.01
+yeah, those requirements deal specifically with the fact that there must be something in the gui that allows the players to choose to make those actions
+	
+Mike Stimson	14.02
+logic of GUIAEB is addressed in WON05
+and the rest of the wonder pages
+52-54
+	
+Luca Buratti	14.03
+yes but the tradeing mechanics aren't explained anywhere. e.g. can I refuse a tradeing offert? how many tradeing can I do each turn? If I buy something to player A, player A lose that item?
+	
+Mike Stimson	14.03
+nothing so complicated
+you cant refuse a trade
+and the resource isnt taken
+	
+Luca Buratti	14.04
+so trade is the wrong definition
+	
+Mike Stimson	14.04
+think of the resource cards as structures that produce the resource
+its still trading because the player gets the money
+	
+Luca Buratti	14.05
+ok so trade is mandatory and act "clonieing" resources and the coin spent for trade go to the player who "sold" the item. correct?
+	
+Aidan Snoswell	14.05
+yes
+and all the resources remain after the turn as well
+	
+Mike Stimson	14.05
+a better definition of that can be added
+is there still any confusion about the trading?
+	
+Luca Buratti	14.08
+I can repeat it untill I have coin?
+	
+Mike Stimson	14.09
+only as much as they can supply
+aswell
+if they have one lumber yard you can only buy one wood resource per turn
+	
+Sergai Person	14.09
+You do not trade away your resources for coins, you can only trade your coins away for the other players resources
+	
+Luca Buratti	14.10
+ok should be clear now
