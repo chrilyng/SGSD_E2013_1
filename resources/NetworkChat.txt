@@ -1,0 +1,252 @@
+Skriv "/?" for at få vist alle tilgængelige kommandoer.
+	
+Mike Stimson	14.34
+then they have a very large return
+	
+Luca Buratti	14.34
+so I don't have to predict the strategy of thet player but just cut off the card that can increase his higher status. correct?
+	
+Aidan Snoswell	14.34
+yeah
+	
+Luca Buratti	14.34
+ok this is much more easyer
+Christian Lyngbye forlod gruppechatten.
+	
+Aidan Snoswell	14.34
+usually that is a players strategy, anyway
+	
+Luca Buratti	14.36
+ok these was the most urgent question about AI. we'll send you some others minor question via e-mail in these days
+	
+Mike Stimson	14.36
+awesome
+networking now?
+	
+César Cornejo	14.37
+we are disagree that AIT requeriments, that write about the tutorial, In our opinion is unnecesary, it is a table game and the board game isn´t a practice tutorial. We think that we give a good manual of game
+	
+Mike Stimson	14.39
+we can lower the priority of that requirement
+	
+Andrew Priebe	14.39
+perhaps tutorial could instead be more like a 'toggle' that the individuals players use, which makes more help tooltips appear during the course of the game
+	
+Luca Buratti	14.39
+quote
+	
+César Cornejo	14.40
+We agree with Andrew
+	
+Mike Stimson	14.41
+we think that would be harder to implement
+then a tutorial level
+but if you want too :)
+that will be changed then
+	
+Andrew Priebe	14.41
+i think the ITU team is up to the challenge!
+(my team)
+regarding networking: what happens if a player loses their connection?
+	
+Mike Stimson	14.42
+NFR006
+	
+Aidan Snoswell	14.43
+page 65
+	
+Andrew Priebe	14.43
+so the AI player would assume the exact state of the disconnected player?
+	
+Mike Stimson	14.44
+yeh
+after the timeout
+	
+Andrew Priebe	14.44
+what do you suggest for timeout?
+5-10 mins?
+	
+Sergai Person	14.44
+Whatever seems reasonable to you
+	
+mig	14.45
+can all players submit cards in parallel or is there a specific order?
+	
+Mike Stimson	14.45
+most games have a votekick mechanic
+parallel
+USER_Mike Stimson deltager i gruppechatten.
+Mike Stimson forlod gruppechatten.
+	
+Andrew Priebe	14.46
+is there any mention of a votekick in the requirements? Otherwise that may be a good low priority one
+	
+Mike Stimson	14.46
+there isn't at the moment
+if that is how you would like to handel the issue we can add it
+Mike Stimson forlod gruppechatten.
+	
+mig	14.47
+If a player does not take action before the time runs out he is notified or the board will just update?
+maybe there is a countdown alert pushed from the server?
+I hope it is alright with everyone that we save this chat log to our own public github repository
+	
+Sergai Person	14.50
+That is fine
+	
+Luca Buratti	14.50
+great idea
+USER_Mike Stimson deltager i gruppechatten.
+	
+Sergai Person	14.51
+it
+	
+Aidan Snoswell	14.51
+GUIAP (page 57) specifies what happens to a non-responsive player, but it doesn't currently mention any alert
+	
+César Cornejo	14.51
+awesome
+Mike Stimson forlod gruppechatten.
+USER_Mike Stimson deltager i gruppechatten.
+	
+Sergai Person	14.54
+Are there any more question?
+Mike Stimson forlod gruppechatten.
+	
+Andrew Priebe	14.55
+ITU is dome
+done
+	
+Luca Buratti	14.55
+Milano is done too
+	
+César Cornejo	14.55
+we have one last
+the discard pile
+it's one for age?
+or one for all 3
+	
+Aidan Snoswell	14.55
+all 3
+USER_Mike Stimson deltager i gruppechatten.
+	
+César Cornejo	14.55
+great
+	
+Luca Buratti	14.56
+but is it useful? Do I evere use the discard pile?
+	
+Aidan Snoswell	14.56
+it's only ever used for two wonder effects
+	
+Luca Buratti	14.56
+ok thank you
+	
+Aidan Snoswell	14.56
+that let you do stuff with the discard pile
+so it's not high priority
+	
+César Cornejo	14.56
+ok we done thanks
+	
+Sergai Person	14.57
+Ok then, if you have any more questions, just send us an email
+	
+Andrew Priebe	14.58
+Adelaide: Just to clarify, are we sending updates the SRS to you, or have you been keeping track of what needs to be changed?
+	
+Mike Stimson	14.58
+we have been keeping track
+	
+Luca Buratti	14.58
+ok can we consider concluded this conference? and can we schedule one last meeting before the last deadline?
+	
+Andrew Priebe	14.58
+kings among men
+	
+César Cornejo	14.58
+ok if sometime came up will send you :D
+	
+Mike Stimson	14.58
+sure
+	
+César Cornejo	14.58
+yes one last meeting before the deadline
+	
+Mike Stimson	14.59
+we will make the changes as soon as possible and re upload it
+	
+Luca Buratti	14.59
+26th same time?
+^25
+	
+César Cornejo	15.00
+25
+	
+mig	15.00
+we cannot 25
+	
+Luca Buratti	15.00
+the deadline is is 27...
+	
+César Cornejo	15.01
+we cannot 26 we have to travel for elections
+	
+Aidan Snoswell	15.01
+at least a couple of our team could be on pretty much any day
+	
+mig	15.01
+I think each group should discuss their changes with Adelaide individually
+	
+Luca Buratti	15.02
+ok so everyone will schedule a fast meeting with adelaide on their own?
+	
+mig	15.03
+we can do tomorrow at 11 CET?
+	
+Mike Stimson	15.03
+ok
+umm
+yeh we will be free tomorrow
+want to do this over skype?
+or is it easier to use hangout since we have it all set up now
+	
+Luca Buratti	15.05
+I suggest to use this group to set up each meeting
+	
+Mike Stimson	15.06
+kk
+	
+César Cornejo	15.06
+we can't tomorrow but will send our issues if we have one
+	
+Luca Buratti	15.07
+ok for Milano 1, in order to conclude, we'll send our mail about AI changes with attached some time and dates for last meeting with adelaide.
+	
+Mike Stimson	15.08
+sounds good
+	
+César Cornejo	15.08
+same for Rio Cuarto 3
+	
+mig	15.09
+I lost chat log for AI so you should all backup what you need :)
+	
+Luca Buratti	15.09
+ok we'll repeat our request. Goodbye from Milano 1 team !
+Luca Buratti forlod gruppechatten.
+	
+Mike Stimson	15.10
+goodbye from Adelaide!
+Mike Stimson forlod gruppechatten.
+	
+Andrew Priebe	15.10
+Thanks all
+Mariano Politano forlod gruppechatten.
+	
+César Cornejo	15.10
+good bye from RioCuarto
+Sergai Person forlod gruppechatten.
+	
+César Cornejo	15.10
+thanks
