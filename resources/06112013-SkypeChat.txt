@@ -1,0 +1,253 @@
+[13:00:46] *** Alessandro Baggio har inviteret Mariano Politano til denne chat ***
+[13:01:10] Mariano Politano: we are here
+[13:01:17] Davide Bianchi: hi mariano
+[13:01:28] Alessandro Baggio: yes they should be
+[13:01:45] Davide Bianchi: We've checked your UML and we agree with it and with your GAME_STATUS
+[13:01:50] Mariano Politano: our propose:
+I have a propose for link logic-ai:
+We define SW_GAME_STATUS as a common protocolo communication(maybe the class should be in Logic), logic provide a SW_GAME_STATUS with all required information, when we decide to build a card, you only invoque a SW_GAME_STATUS.build_card(player id,card): player should has all resources for build its. We provide a SW_GAME_STATUS.is_trade(buller: id, seller:id,purchase:SW_Resource) where 0<id<8 (player identifiquer), and a SW_GAME_STATUS.trade(buyer: id, seller:id,purchase:SW_Resource) where seller has all resource enumerate in purchase and buyer has coins(1 or 2). If you decide discard card, we only invoque SW_GAME_STATUS.discardCard(Integer: id_player, Integer: id_card ), and the same if you decide to build a wonder stage. Is our idea,what do you think about this? if you agree we implements a API.
+[13:02:11] Davide Bianchi: we require only 3 more things
+[13:02:25] Davide Bianchi: 1° Add a build_wonder method in the game status
+[13:03:48] Mariano Politano: yes..
+[13:04:18] Davide Bianchi: becous as I can see I can only build a card or discard
+[13:04:26] Davide Bianchi: and there isn't a method to build the wonder
+[13:04:31] Davide Bianchi: correct me if I'M wrong
+[13:05:14] Mariano Politano: yes, you are right. We only put some methods in the last message
+[13:05:27] Mariano Politano: as a pattern
+[13:05:32] Davide Bianchi: ok thank you
+[13:07:29] Davide Bianchi: 2° we need to modify the player class in 2 parts as follow:
+ player_data (this class contain all the information that every player can see and the pointer to the neighbors)
+ player (this class contain player_data and contain all the missing informations like the card that the player own.) this will be useful for our IA
+[13:08:02] Davide Bianchi: Is this possible ?
+[13:09:36] Mariano Politano: yes, but why don't use only player class?
+[13:09:58] Mariano Politano: it has a pointer to neighborgs
+[13:10:39] Mariano Politano: and you only have a acces to some public features
+[13:11:42] Alessandro Baggio: because we shuold not have access to all the information of other player. and in the same way we should not have access directly to the method of the logic
+[13:13:54] Alessandro Baggio: christian what do you think about this?
+[13:14:14] Christian Lyngbye: player should have id for network communication right? and the host is always player with id 0?
+[13:14:56] Christian Lyngbye: I think is alright to share player class because you can only see public features
+[13:15:17] Mariano Politano: ok, so you  only use a class SW_GAME_STATUS and add neighbord player information in this also?
+[13:15:18] Christian Lyngbye: but you need the model/game_status that owns all player data?
+[13:15:52] Christian Lyngbye: so game_status is root for all data
+[13:16:00] Mariano Politano: sorry, again:  ok, why you  only use a class SW_GAME_STATUS and add neighbord player information in this also?
+[13:16:30] Mariano Politano: yes
+[13:16:44] Mariano Politano: a game_status is root and define a common protocol
+[13:16:48] Luca: in particula wich feature youyou will implemet as public?
+[13:19:36] Luca: because we need only getter, so if you implement only the getter as public and the other methonds as proteced for us is ok
+[13:19:50] Mariano Politano: we will create a SW_GAME_STATUS with:  
+  - All the cards in each player hand as a order list(set(SW_CARD)).
+  - All the resources of each player as a order list.
+  - The wonder level of each player and the wonder id as a order list((id_wonder,level))
+  - Coin and BattlePoint of each player as a order list
+  - player neighbor information maybe it a list(player_data)?
+something else?
+[13:20:28] Mariano Politano: a order list is a list with player 1 information, player 2 information , ... , player 7 information
+[13:20:46] Christian Lyngbye: do you know Model View Controller, Mariano? We are discussing Model but I think Logic should implement controller as well
+[13:22:09] Mariano Politano: you can reed it and have some methos as: build_wonder, canBuildForFree, trade, isTrade, build_card., so on.
+[13:23:01] Mariano Politano: yes we know it. We should implement controller so we call ai with SW_GAME_STATUS
+[13:23:15] Mariano Politano: and drive the main loop
+[13:23:52] Christian Lyngbye: You can store list of players  all this data. We need to know who is current player.
+[13:24:13] Mariano Politano: define by david bianchi in "AI UML vo.1" e-mail
+[13:25:11] Mariano Politano: there isn't a current player, all player game in the same moments, it is right?
+[13:25:17] Davide Bianchi: yes
+[13:25:45] Davide Bianchi: there isn't a current player
+[13:25:46] Christian Lyngbye: but how do you know which player is yours in the UI?
+[13:26:33] Davide Bianchi: each player must contain an ID
+[13:26:51] Christian Lyngbye: when you create the game we need to define AI difficulty and timeout in seconds
+[13:27:00] Mariano Politano: ui identifiquer it and for example call build_wonder(id_player)
+[13:27:55] Christian Lyngbye: ok, but this ID is returned from create_game/join_game?
+[13:29:13] Mariano Politano: each player has a id, we discusse it before. create_game define it
+[13:29:25] Christian Lyngbye: sorry
+[13:31:30] Mariano Politano: sorry, you disagree with our approach, right? what do you hope from logic?
+[13:32:37] Christian Lyngbye: it is ok if we can pass AI difficulty and timeout when we create game
+[13:34:10] Davide Bianchi: Mariano for us your actual Game_status is ok for the method like buil_card, trad and so on. For the information we would like to have only:
+1- the players list (ARRAYED_LIST[SW_PLAYER])
+2- the discard pile (ARRAYED_LIST[SW_CARD])
+please can you confirm that we can get all the informations that we need via the SW_PLAYER class?
+[13:34:37] Mariano Politano: yes we have that in mind,that was a request from davide
+[13:34:53] Christian Lyngbye: in MVC you can separate these functions into different controller class e.g. SW_GAME_LOGIC_CONTROLLER and UI call this class instead of SW_PLAYER and SW_MODEL
+[13:37:11] Christian Lyngbye: maybe do inheritance to have SW_GAME_LOGIC_HOST_CONTROLLER and SW_GAME_LOGIC_CLIENT_CONTROLLER
+[13:41:16] Mariano Politano: if the player list and the discard pile you would get from the SW_PLAYER?
+[13:41:45] Davide Bianchi: no we want the player list and the discard pile
+[13:42:09] Davide Bianchi: tha player list is a list of SW_PLAYER
+[13:42:35] Davide Bianchi: and we want to know if we can get all the informations about a player by the SW_PLAYER class
+[13:45:06] Mariano Politano: yes, you can have that information in SW_GAME_STATUS and you can have all inforation about player in the sw_player.
+[13:45:16] Davide Bianchi: nice. so, recap:
+[13:45:27] Davide Bianchi: we get player list and discard pile from SW_GAME_STATUs
+[13:45:36] Davide Bianchi: we compute our action
+[13:45:48] Davide Bianchi: and then we comunicate the action via the SW_GAME_STATUS method
+[13:45:50] Davide Bianchi: correct?
+[13:45:53] Mariano Politano: yes!!!
+[13:45:56] Davide Bianchi: ok
+[13:45:56] Mariano Politano: :)
+[13:46:25] Mariano Politano: do you agree?
+[13:46:46] Davide Bianchi: yes we agree
+[13:48:09] Davide Bianchi: ok and we need:
+1° add the build wonder method in SW_GAME_STATUS
+2° add a get_cost method to SW_CARD
+[13:48:32] Davide Bianchi: 3° add a get_cost method to SW_WONDER to get the cost to the next stage
+[13:48:38] Davide Bianchi: that's should be all for us
+[13:49:09] Davide Bianchi: is this ok for you?
+[13:52:07] Mariano Politano: yes yes. now I have a question do you prefer communicate a ai player play to controller instead SW_GAME_STATUS?
+[13:54:06] Davide Bianchi: if you provide us the method: build card, build wonder, trade and discard; then for is ok to deal directly with controller
+[13:55:34] Mariano Politano: so we provide e method: build card, build wonder, trade and discard in controller instead of SW_GAME_STATUS, is this right?
+[13:56:02] Davide Bianchi: yes.
+Where can we find those methods?
+[13:57:16] Mariano Politano:  sorry, in the first moment we think put these in SW_GAME_STATUS and now into controller
+[13:57:35] Mariano Politano: do you agree?
+[13:57:45] Davide Bianchi: yes we agree
+[13:58:12] Davide Bianchi: just tell us where we can find those method since they are no longer in game_status
+[13:59:37] Mariano Politano: into a new class SW_LOGIC_CONTROLLER. do you agree?
+[13:59:43] Davide Bianchi: yes we agree
+[14:00:30] Davide Bianchi: so each turn you send us, via the update_world method from AI_CONTROLLER both SW_LOGIC_CONTROLLER and SW_GAME_STATUS
+[14:00:34] Davide Bianchi: correct?
+[14:01:43] Davide Bianchi: or you prefer to send LOGIC_CONTRLLER at the creation of AI_CONTROLLER and then send only GAME_STATUS using update_world method
+[14:01:54] Davide Bianchi: ?
+[14:02:03] Mariano Politano: yes the second one
+[14:02:06] Davide Bianchi: ok
+[14:02:06] Mariano Politano: :)
+[14:02:10] Alessandro Baggio: ok!
+[14:02:13] Christian Lyngbye: we need to define all 78 cards as a constant ARRAY of STRING or CARD? they should just be created once right?
+[14:03:00] Davide Bianchi: I have to go now but Luca and Alessandro will remain here. Bye !
+[14:03:20] Mariano Politano: ok, bye Davide.
+[14:05:07] Mariano Politano: We think create card only once, save it as a object and load it each time runs the program. what do you think?
+[14:05:39] Mariano Politano: and then a card is a SW_CARD for ui and ai
+[14:06:20] Alessandro Baggio: ok! you will create them and add to the deck when the card is in the correct age
+[14:06:49] Mariano Politano: yes
+[14:06:59] Alessandro Baggio: and then you send us the card
+[14:07:14] Mariano Politano: create game can create deck for each age also
+[14:07:21] Alessandro Baggio: not a string, right?
+[14:07:50] Mariano Politano: yes, we send a hand (arraylist[card])
+[14:07:59] Mariano Politano: sorry *SW_CARD
+[14:08:02] Alessandro Baggio: perfect
+[14:09:32] Mariano Politano: for the effect of the cards we are open to suggestion because you disagree with our idea
+[14:09:42] Alessandro Baggio: and sw_game_status that is actually in our folder you can move it into logic folder
+[14:09:55] Mariano Politano: yes
+[14:10:00] *** Christian Lyngbye sendte MVC SSD - New Page (1).png ***
+[14:10:21] Christian Lyngbye: does this make sense for UI-Logic?
+[14:10:56] Mariano Politano: where we can see that file?
+[14:11:15] Christian Lyngbye: in Skype? make function can be replaced by createGame
+[14:11:45] Mariano Politano: yes, sorry we did't find the file
+[14:12:54] Christian Lyngbye: try this http://www.lucidchart.com/invitations/accept/527a4047-242c-48c0-8bb6-34270a00c87a
+[14:18:18] Mariano Politano: we  are reading it, one moment please
+[14:19:20] *** Alessandro Baggio sendte Senza nome 1.odt ***
+[14:19:52] Alessandro Baggio: this is an example how to implemet the effects, its a pseudo-code
+[14:20:10] Alessandro Baggio: this is relative only for a restricted set of cards
+[14:20:35] Alessandro Baggio: you can do this type of abstracion for all the effects that are similar to each other
+[14:21:10] Alessandro Baggio: now we have to go, you can send us an email if you have questions, by bye
+[14:22:16] Christian Lyngbye: difficulty = 'O' ?
+[14:23:04] Alessandro Baggio: by the way it was only a suggestion, we don't need a representation of effect... it is only for you
+[14:23:18] Christian Lyngbye: O stands for? bye and thank you
+[14:23:19] Alessandro Baggio: that difficulty means order random ai
+[14:23:33] Alessandro Baggio: it's a type of ai
+[14:23:44] Mariano Politano: you don't need know anything about card effect?
+[14:23:58] Alessandro Baggio: it's the 2nd leve of ai
+[14:24:53] Alessandro Baggio: no will implement in some way the benefict of the card
+[14:25:45] Alessandro Baggio: if other problem raise please send us an email
+[14:25:48] Alessandro Baggio: bye bye
+[14:26:20] Mariano Politano: ok I send a e-mail. Good luck
+[14:26:58] Mariano Politano: so, now we begin to talk about GUI-Logic
+[14:27:06] Mariano Politano: ok?
+[14:27:57] Christian Lyngbye: ok
+[15:22:50] Christian Lyngbye: can we continue here?
+[15:23:09] Mariano Politano: yes
+[15:23:44] Christian Lyngbye: I agree on first part and it is responsibility of logic to assign ID to players
+[15:24:15] Mariano Politano: I copy here the other conversation: 
+--- Inserted ---
+We talk here.! Rio: createGame? how we decide how many ai player is there? all AI PLAYER play in the same level? do we need a player name? 
+can you answer here?
+ITU: GUISL says any players who aren’t real users will be AI players instead
+Rio: all AI PLAYER play in the same level?
+ITU: that is my interpretation (Set the level of the AI players in the game) understood Rio: Ok Rio:do we need a player name? 
+ITU: GUISN describes player names. You can try running project in Eiffelstudio and see the prototype to help understand context. Rio: the controller add player only when they dont reach the minimum limit?
+ITU: yes, but you can replace AI player with network player
+Rio:you determine the amount of players
+
+ITU: host decides amount between 3 and 7
+Rio: we think that the create game action should be perfomed when the host click start game,so any
+real pllayer can join the game
+we don't create game until the host ckick in "start game" button. what do you think about it? ITU: I just follow requirements that describe lobby. I don't understand your proposal. Rio: We only propose that the game(logic view) will created when a host player click in start game. So controller decide how many ai player should be added. do you understand it?   ITU: it is fine with us, ok
+
+Rio: Great.  ITU: if you prefer to use character to represent difficulty it is ok. We just need to show. string
+
+
+
+
+
+Rio: It is the same for us, maybe: easy= 'e'. medium='m' hard='h' ok? we have other question, how we share to you a player id?  or maybe we send SW_PLAYER and you work with that?
+
+ITU: we can choose to always use 0 for host. but it can be returned by create_game. Join game needs it but it is a different use case  Rio: Sorry, I don't imagine how it works very well. SW_PLAYER will has a id feature, it is ok? Now, I undersand you method create_game: so when host click in create_game-> controller make a list[SW_PLAYER], and GUI use controller.add_play method each time that a player join game until host player click in start_game. the method add_play return you a integer for you identifique each player , do you agree? 
+--- Inserted ---
+[15:24:27] Mariano Politano: sorry!! I copy anything
+[15:24:32] Mariano Politano: retry:
+[15:25:23] Mariano Politano: I can't sorry.
+[15:25:27] Mariano Politano: we can continue
+[15:25:32] Christian Lyngbye: just let it be
+[15:25:38] Christian Lyngbye: no problem
+[15:27:11] Christian Lyngbye: Michael taking over for a couple of sec> I need to ask how you will update the board state on the client side?
+[15:27:49] Christian Lyngbye: Network will send the entire boardstate over the network, and be able to pass it to the logic, which could forward it directly to the GUI
+[15:28:22] Christian Lyngbye: so is it possible for you guys to implement a method like updateBoard(state)_
+[15:28:29] Christian Lyngbye: ?
+[15:30:29] Mariano Politano: what will updateBord(state) do?
+[15:31:04] Mariano Politano: sorry We undersand a little about client-server
+[15:36:08] Mariano Politano: *very little
+[15:37:18] Christian Lyngbye: it will just update the GUI and the boardstate
+[15:37:38] Christian Lyngbye: so it would actually be a setBoardstate
+[15:38:12] Mariano Politano: and state= SW_GAME_STATUS
+[15:38:17] Mariano Politano: ??
+[15:38:21] Christian Lyngbye: yeah, sry >(
+[15:38:28] Christian Lyngbye: :)'
+[15:38:32] Mariano Politano: :)
+[15:39:12] Christian Lyngbye: Is this fine, or do you have another idea of how the status should be updated on the client?
+[15:39:37] Mariano Politano: I imagine that we can implement something like that... but I don't imagine how we send to each player a SW_GAME_STATUS
+[15:40:06] Mariano Politano: is it a logic responsability?
+[15:40:30] Christian Lyngbye: no, you will just send it to the networkcontroller and we will handle the forwarding to clients :)
+[15:41:09] Mariano Politano: It  is great!!!
+[15:42:06] Mariano Politano: well so we can implement updateBoard(state:SW_PLAYER) in logic controller
+[15:42:12] Christian Lyngbye: yup
+[15:42:17] Christian Lyngbye: that would be great
+[15:42:32] Mariano Politano: I mistake when I say that state was a SW_GAME_STATUS
+[15:43:45] Christian Lyngbye: uh sry, no you would need the entire game status to update the board
+[15:44:02] Christian Lyngbye: sorry about that. - but this is because you need information on the other players as well
+[15:45:40] Christian Lyngbye: so lets say you call a method called broadcastGamestate(SW_GAME_STATUS), we will serialize this and send it to the clients, deserialize it and call a function on the client's game logic called updateBoard(SW_GAME_STATUS)
+[15:45:49] Mariano Politano: yes but player has information about his neighbord
+[15:46:21] Christian Lyngbye: that information will be in the game status as well, so we can just fetch it from there
+[15:46:42] Mariano Politano: maybe I pass SW_GAME_STATUS and you take the necessary information?
+[15:46:51] Christian Lyngbye: yup
+[15:47:01] Mariano Politano: do you agree?
+[15:47:01] Christian Lyngbye: we will probably need it all
+[15:47:08] Christian Lyngbye: yes
+[15:47:22] Christian Lyngbye: then we can always modify our client network controller to match your needs
+[15:47:35] Mariano Politano: so we implements updateBoard(state: SW_GAME_STATE)
+[15:47:58] Christian Lyngbye: yep
+[15:48:07] Christian Lyngbye: that would be the idea :)
+[15:48:16] Mariano Politano: :)
+[15:50:40] Mariano Politano: now, how do you send to logic controller a play? I think that you use discard, build_card, build_wonder controller methods but first you verifyque  if a player can build card or buil wonder and so we add some methods like can_build_card and so on.
+[15:50:49] Mariano Politano: do you agree?
+[15:55:03] Christian Lyngbye: maybe, but this depends on how you implement it. You could let the client make the move (if it is possible) and forward the action using the networkcontroller to the host, that will update the board accordingly (if it is the host itself you ofcourse should just update the boardstatus locally and not use the networkcontroller to forward the status). At the end of each turn the host will then broadcast the new board status to the clients, where an updateBoard will be called
+[15:56:10] Christian Lyngbye: so if it's a client, i just sends the action to the controller and if it's the host it will "send" the actions to itself
+[15:56:17] Christian Lyngbye: if that makes sense ?
+[16:00:18] Mariano Politano: forward the action using the networkcontroller to the host??? don't undersatand this part
+[16:02:15] Mariano Politano: yes yes. the state of game will be in a host
+[16:03:05] Christian Lyngbye: if you're the client, the GUI will send a command/action to logic - this action will be validated (see whether or not it is a valid move) - if the move is valid it will use send_action() in the networkcontroller
+[16:03:34] Mariano Politano: where we verify a plays is correct?
+[16:04:19] Christian Lyngbye: the plays would be verified in logic, then if it is a valid play, you would like to update the boardstatus with that play
+[16:04:39] Christian Lyngbye: this is done by sending the action to the host's logic
+[16:05:02] Christian Lyngbye: plays would be verified on the client's logic i guess :)
+[16:05:13] Mariano Politano: I understand :)
+[16:05:22] Christian Lyngbye: perfect
+[16:10:57] Mariano Politano: how will the player interaction be? for example if a client player want build a card, multiplayer module use a controller method can_build(card,player id) and then controller answer true or false if true build card and multiplayer module inform to player that he play and player pass to ready state.
+[16:12:20] Christian Lyngbye: yes, that's the idea.
+[16:12:47] Mariano Politano: then when all player state are ready, controller send a updateBoard() with SW_GAME_STATUS update to networcontroller, and it perform player update
+[16:12:50] Mariano Politano: it is ok?
+[16:13:42] Christian Lyngbye: I will have to leave in a few minutes, Christian might be able to take over again, but if you have any more questions regarding network, you can write to me on my skype mchl.friis :)
+[16:14:03] Christian Lyngbye: yeah, the logic would have to keep track of the ready players
+[16:14:36] Mariano Politano: ok, not problem
+[16:15:09] Christian Lyngbye: then when all players have made a move, you call the updateboard yes
+[16:15:35] Christian Lyngbye: which will also have to call broadcastBoardstate which will send the status and call updateboard on the clients
+[16:15:58] Mariano Politano: one question. which method updateBoard in logiccontroller call in networkcontroller?
+[16:16:44] Mariano Politano: we define this method in networkcontroller api no?
+[16:18:10] Christian Lyngbye: Yes you need the updateboard in the API, and in the network we will have the method broadcastState, that will make sure it is called on each client
+[16:20:16] Mariano Politano: ok, that great. We will implement what we discuss in this metting.
+[16:20:24] Mariano Politano: thanks for all guys
+[16:20:46] Christian Lyngbye: super, I will have to leave now also, but if you have more questions about the last thing here, just write to me on skype :)
