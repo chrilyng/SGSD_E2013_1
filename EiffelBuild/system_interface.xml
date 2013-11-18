@@ -17,7 +17,6 @@
    <Title>Display window</Title>
   </EV_WINDOW>
   <EV_PIXMAPABLE>
-   <Pixmap_path>C:\Users\Andrew\Documents\GitHub\SGSD_E2013_1\EiffelBuild\age1.png</Pixmap_path>
   </EV_PIXMAPABLE>
   <EV_CONTAINER>
   </EV_CONTAINER>
@@ -35,42 +34,14 @@
     <Minimum_height>400</Minimum_height>
    </EV_WIDGET>
    <EV_BOX>
-    <Padding>10</Padding>
-    <Border>15</Border>
-    <Is_item_expanded>000</Is_item_expanded>
+    <Border>10</Border>
+    <Is_item_expanded>011</Is_item_expanded>
    </EV_BOX>
    <EV_PIXMAPABLE>
+    <Pixmap_path>C:\Users\Andrew\Documents\GitHub\SGSD_E2013_1\EiffelBuild\age1.png</Pixmap_path>
    </EV_PIXMAPABLE>
    <EV_CONTAINER>
    </EV_CONTAINER>
-   <item type="EV_LABEL">
-    <Internal_properties>
-     <id>220</id>
-     <name>textlabel1</name>
-     <Expanded>0</Expanded>
-    </Internal_properties>
-    <EV_COLORIZABLE>
-    </EV_COLORIZABLE>
-    <EV_FONTABLE>
-     <Family>3</Family>
-     <Weight>7</Weight>
-     <Shape>10</Shape>
-     <Height_in_points>14</Height_in_points>
-     <Preferred_family>Tahoma</Preferred_family>
-    </EV_FONTABLE>
-    <EV_SENSITIVE>
-    </EV_SENSITIVE>
-    <EV_TEXTABLE>
-     <Text>Card name</Text>
-    </EV_TEXTABLE>
-    <EV_TOOLTIPABLE>
-    </EV_TOOLTIPABLE>
-    <EV_WIDGET>
-    </EV_WIDGET>
-    <EV_TEXT_ALIGNABLE>
-     <Text_alignment>Left</Text_alignment>
-    </EV_TEXT_ALIGNABLE>
-   </item>
    <item type="EV_LABEL">
     <Internal_properties>
      <id>223</id>
@@ -94,43 +65,195 @@
     <EV_TOOLTIPABLE>
     </EV_TOOLTIPABLE>
     <EV_WIDGET>
+     <Minimum_height>35</Minimum_height>
     </EV_WIDGET>
     <EV_TEXT_ALIGNABLE>
-     <Text_alignment>Left</Text_alignment>
     </EV_TEXT_ALIGNABLE>
    </item>
-   <item type="EV_LABEL">
+   <item type="EV_HORIZONTAL_BOX">
     <Internal_properties>
-     <id>227</id>
-     <name>carddescriptionlabel</name>
-     <Expanded>0</Expanded>
+     <id>239</id>
+     <Expanded>1</Expanded>
     </Internal_properties>
     <EV_COLORIZABLE>
     </EV_COLORIZABLE>
-    <EV_FONTABLE>
-     <Family>3</Family>
-     <Weight>7</Weight>
-     <Shape>10</Shape>
-     <Height_in_points>14</Height_in_points>
-     <Preferred_family>Tahoma</Preferred_family>
-    </EV_FONTABLE>
     <EV_SENSITIVE>
     </EV_SENSITIVE>
-    <EV_TEXTABLE>
-     <Text>Age: I
-Color: Red
-Resource cost: 1 Clay
-Free in next age:
-Card1
-Card2</Text>
-    </EV_TEXTABLE>
-    <EV_TOOLTIPABLE>
-    </EV_TOOLTIPABLE>
     <EV_WIDGET>
+     <Minimum_height>0</Minimum_height>
     </EV_WIDGET>
-    <EV_TEXT_ALIGNABLE>
-     <Text_alignment>Left</Text_alignment>
-    </EV_TEXT_ALIGNABLE>
+    <EV_BOX>
+     <Border>10</Border>
+     <Is_item_expanded>101</Is_item_expanded>
+    </EV_BOX>
+    <EV_PIXMAPABLE>
+    </EV_PIXMAPABLE>
+    <EV_CONTAINER>
+    </EV_CONTAINER>
+    <item type="EV_CELL">
+     <Internal_properties>
+      <id>233</id>
+      <Expanded>1</Expanded>
+     </Internal_properties>
+     <EV_COLORIZABLE>
+     </EV_COLORIZABLE>
+     <EV_SENSITIVE>
+     </EV_SENSITIVE>
+     <EV_WIDGET>
+     </EV_WIDGET>
+     <EV_PIXMAPABLE>
+     </EV_PIXMAPABLE>
+     <EV_CONTAINER>
+     </EV_CONTAINER>
+     <item type="EV_LABEL">
+      <Internal_properties>
+       <id>236</id>
+       <Expanded>0</Expanded>
+      </Internal_properties>
+      <EV_COLORIZABLE>
+      </EV_COLORIZABLE>
+      <EV_FONTABLE>
+      </EV_FONTABLE>
+      <EV_SENSITIVE>
+      </EV_SENSITIVE>
+      <EV_TEXTABLE>
+       <Text>Age: 1</Text>
+      </EV_TEXTABLE>
+      <EV_TOOLTIPABLE>
+      </EV_TOOLTIPABLE>
+      <EV_WIDGET>
+      </EV_WIDGET>
+      <EV_TEXT_ALIGNABLE>
+      </EV_TEXT_ALIGNABLE>
+     </item>
+    </item>
+    <item type="EV_CELL">
+     <Internal_properties>
+      <id>234</id>
+      <Expanded>1</Expanded>
+     </Internal_properties>
+     <EV_COLORIZABLE>
+     </EV_COLORIZABLE>
+     <EV_SENSITIVE>
+     </EV_SENSITIVE>
+     <EV_WIDGET>
+     </EV_WIDGET>
+     <EV_PIXMAPABLE>
+     </EV_PIXMAPABLE>
+     <EV_CONTAINER>
+     </EV_CONTAINER>
+     <item type="EV_LABEL">
+      <Internal_properties>
+       <id>237</id>
+       <Expanded>0</Expanded>
+      </Internal_properties>
+      <EV_COLORIZABLE>
+      </EV_COLORIZABLE>
+      <EV_FONTABLE>
+      </EV_FONTABLE>
+      <EV_SENSITIVE>
+      </EV_SENSITIVE>
+      <EV_TEXTABLE>
+       <Text>Cost: Clay</Text>
+      </EV_TEXTABLE>
+      <EV_TOOLTIPABLE>
+      </EV_TOOLTIPABLE>
+      <EV_WIDGET>
+      </EV_WIDGET>
+      <EV_TEXT_ALIGNABLE>
+      </EV_TEXT_ALIGNABLE>
+     </item>
+    </item>
+    <item type="EV_CELL">
+     <Internal_properties>
+      <id>235</id>
+      <Expanded>1</Expanded>
+     </Internal_properties>
+     <EV_COLORIZABLE>
+     </EV_COLORIZABLE>
+     <EV_SENSITIVE>
+     </EV_SENSITIVE>
+     <EV_WIDGET>
+     </EV_WIDGET>
+     <EV_PIXMAPABLE>
+     </EV_PIXMAPABLE>
+     <EV_CONTAINER>
+     </EV_CONTAINER>
+     <item type="EV_LABEL">
+      <Internal_properties>
+       <id>238</id>
+       <Expanded>0</Expanded>
+      </Internal_properties>
+      <EV_COLORIZABLE>
+      </EV_COLORIZABLE>
+      <EV_FONTABLE>
+      </EV_FONTABLE>
+      <EV_SENSITIVE>
+      </EV_SENSITIVE>
+      <EV_TEXTABLE>
+       <Text>Color: Red</Text>
+      </EV_TEXTABLE>
+      <EV_TOOLTIPABLE>
+      </EV_TOOLTIPABLE>
+      <EV_WIDGET>
+      </EV_WIDGET>
+      <EV_TEXT_ALIGNABLE>
+      </EV_TEXT_ALIGNABLE>
+     </item>
+    </item>
+   </item>
+   <item type="EV_VERTICAL_BOX">
+    <Internal_properties>
+     <id>240</id>
+     <Expanded>1</Expanded>
+    </Internal_properties>
+    <EV_COLORIZABLE>
+    </EV_COLORIZABLE>
+    <EV_SENSITIVE>
+    </EV_SENSITIVE>
+    <EV_WIDGET>
+     <Minimum_height>270</Minimum_height>
+    </EV_WIDGET>
+    <EV_BOX>
+     <Is_item_expanded>0</Is_item_expanded>
+    </EV_BOX>
+    <EV_PIXMAPABLE>
+    </EV_PIXMAPABLE>
+    <EV_CONTAINER>
+    </EV_CONTAINER>
+    <item type="EV_LABEL">
+     <Internal_properties>
+      <id>227</id>
+      <name>carddescriptionlabel</name>
+      <Expanded>0</Expanded>
+     </Internal_properties>
+     <EV_COLORIZABLE>
+     </EV_COLORIZABLE>
+     <EV_FONTABLE>
+      <Family>3</Family>
+      <Weight>7</Weight>
+      <Shape>10</Shape>
+      <Height_in_points>14</Height_in_points>
+      <Preferred_family>Tahoma</Preferred_family>
+     </EV_FONTABLE>
+     <EV_SENSITIVE>
+     </EV_SENSITIVE>
+     <EV_TEXTABLE>
+      <Text>Free in next age:
+Card1
+Card2
+
+Other info:</Text>
+     </EV_TEXTABLE>
+     <EV_TOOLTIPABLE>
+     </EV_TOOLTIPABLE>
+     <EV_WIDGET>
+      <Minimum_height>270</Minimum_height>
+     </EV_WIDGET>
+     <EV_TEXT_ALIGNABLE>
+      <Text_alignment>Left</Text_alignment>
+     </EV_TEXT_ALIGNABLE>
+    </item>
    </item>
   </item>
  </item>
