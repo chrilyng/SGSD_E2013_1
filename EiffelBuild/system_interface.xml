@@ -18,7 +18,7 @@
   <Constant>
    <type>INTEGER</type>
    <Name>main_width</Name>
-   <Value>800</Value>
+   <Value>810</Value>
   </Constant>
   <Constant>
    <type>INTEGER</type>
@@ -40,20 +40,10 @@
    <Name>resource_count</Name>
    <Value>FamilyTypewriter;WeightRegular;ShapeRegular;18;Viner Hand ITC</Value>
   </Constant>
-  <Constant>
-   <type>COLOR</type>
-   <Name>resource_color</Name>
-   <Value>147073000</Value>
-  </Constant>
-  <Constant>
-   <type>DIRECTORY</type>
-   <Name>resourcedir</Name>
-   <Value>C:\Users\Andrew\Documents\GitHub\dose2013\src\dose\images\group_01</Value>
-  </Constant>
  </item>
  <item type="EV_DIALOG">
   <Internal_properties>
-   <id>63</id>
+   <id>66</id>
    <name>sw_wonder_display</name>
    <Expanded>1</Expanded>
   </Internal_properties>
@@ -72,7 +62,7 @@
   </EV_CONTAINER>
   <item type="EV_LABEL">
    <Internal_properties>
-    <id>64</id>
+    <id>67</id>
     <Expanded>0</Expanded>
    </Internal_properties>
    <EV_COLORIZABLE>
@@ -94,7 +84,7 @@
  </item>
  <item type="EV_TITLED_WINDOW">
   <Internal_properties>
-   <id>55</id>
+   <id>58</id>
    <name>sw_lobby_client_window</name>
    <Expanded>1</Expanded>
   </Internal_properties>
@@ -113,7 +103,7 @@
   </EV_CONTAINER>
   <item type="EV_TABLE">
    <Internal_properties>
-    <id>62</id>
+    <id>65</id>
     <Expanded>1</Expanded>
    </Internal_properties>
    <EV_COLORIZABLE>
@@ -139,7 +129,7 @@
    </EV_CONTAINER>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>56</id>
+     <id>59</id>
      <Expanded>0</Expanded>
     </Internal_properties>
     <EV_COLORIZABLE>
@@ -160,71 +150,6 @@
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>57</id>
-     <Expanded>0</Expanded>
-    </Internal_properties>
-    <EV_COLORIZABLE>
-    </EV_COLORIZABLE>
-    <EV_FONTABLE>
-    </EV_FONTABLE>
-    <EV_SENSITIVE>
-    </EV_SENSITIVE>
-    <EV_TEXTABLE>
-     <Text>Human</Text>
-    </EV_TEXTABLE>
-    <EV_TOOLTIPABLE>
-    </EV_TOOLTIPABLE>
-    <EV_WIDGET>
-    </EV_WIDGET>
-    <EV_TEXT_ALIGNABLE>
-    </EV_TEXT_ALIGNABLE>
-   </item>
-   <item type="EV_BUTTON">
-    <Internal_properties>
-     <id>58</id>
-     <Expanded>0</Expanded>
-    </Internal_properties>
-    <EV_COLORIZABLE>
-    </EV_COLORIZABLE>
-    <EV_FONTABLE>
-    </EV_FONTABLE>
-    <EV_SENSITIVE>
-    </EV_SENSITIVE>
-    <EV_TEXTABLE>
-     <Text>kick</Text>
-    </EV_TEXTABLE>
-    <EV_TOOLTIPABLE>
-    </EV_TOOLTIPABLE>
-    <EV_WIDGET>
-    </EV_WIDGET>
-    <EV_TEXT_ALIGNABLE>
-    </EV_TEXT_ALIGNABLE>
-    <EV_PIXMAPABLE>
-    </EV_PIXMAPABLE>
-   </item>
-   <item type="EV_LABEL">
-    <Internal_properties>
-     <id>59</id>
-     <Expanded>0</Expanded>
-    </Internal_properties>
-    <EV_COLORIZABLE>
-    </EV_COLORIZABLE>
-    <EV_FONTABLE>
-    </EV_FONTABLE>
-    <EV_SENSITIVE>
-    </EV_SENSITIVE>
-    <EV_TEXTABLE>
-     <Text>AI1</Text>
-    </EV_TEXTABLE>
-    <EV_TOOLTIPABLE>
-    </EV_TOOLTIPABLE>
-    <EV_WIDGET>
-    </EV_WIDGET>
-    <EV_TEXT_ALIGNABLE>
-    </EV_TEXT_ALIGNABLE>
-   </item>
-   <item type="EV_LABEL">
-    <Internal_properties>
      <id>60</id>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -235,7 +160,7 @@
     <EV_SENSITIVE>
     </EV_SENSITIVE>
     <EV_TEXTABLE>
-     <Text>AI</Text>
+     <Text>Human</Text>
     </EV_TEXTABLE>
     <EV_TOOLTIPABLE>
     </EV_TOOLTIPABLE>
@@ -267,11 +192,76 @@
     <EV_PIXMAPABLE>
     </EV_PIXMAPABLE>
    </item>
+   <item type="EV_LABEL">
+    <Internal_properties>
+     <id>62</id>
+     <Expanded>0</Expanded>
+    </Internal_properties>
+    <EV_COLORIZABLE>
+    </EV_COLORIZABLE>
+    <EV_FONTABLE>
+    </EV_FONTABLE>
+    <EV_SENSITIVE>
+    </EV_SENSITIVE>
+    <EV_TEXTABLE>
+     <Text>AI1</Text>
+    </EV_TEXTABLE>
+    <EV_TOOLTIPABLE>
+    </EV_TOOLTIPABLE>
+    <EV_WIDGET>
+    </EV_WIDGET>
+    <EV_TEXT_ALIGNABLE>
+    </EV_TEXT_ALIGNABLE>
+   </item>
+   <item type="EV_LABEL">
+    <Internal_properties>
+     <id>63</id>
+     <Expanded>0</Expanded>
+    </Internal_properties>
+    <EV_COLORIZABLE>
+    </EV_COLORIZABLE>
+    <EV_FONTABLE>
+    </EV_FONTABLE>
+    <EV_SENSITIVE>
+    </EV_SENSITIVE>
+    <EV_TEXTABLE>
+     <Text>AI</Text>
+    </EV_TEXTABLE>
+    <EV_TOOLTIPABLE>
+    </EV_TOOLTIPABLE>
+    <EV_WIDGET>
+    </EV_WIDGET>
+    <EV_TEXT_ALIGNABLE>
+    </EV_TEXT_ALIGNABLE>
+   </item>
+   <item type="EV_BUTTON">
+    <Internal_properties>
+     <id>64</id>
+     <Expanded>0</Expanded>
+    </Internal_properties>
+    <EV_COLORIZABLE>
+    </EV_COLORIZABLE>
+    <EV_FONTABLE>
+    </EV_FONTABLE>
+    <EV_SENSITIVE>
+    </EV_SENSITIVE>
+    <EV_TEXTABLE>
+     <Text>kick</Text>
+    </EV_TEXTABLE>
+    <EV_TOOLTIPABLE>
+    </EV_TOOLTIPABLE>
+    <EV_WIDGET>
+    </EV_WIDGET>
+    <EV_TEXT_ALIGNABLE>
+    </EV_TEXT_ALIGNABLE>
+    <EV_PIXMAPABLE>
+    </EV_PIXMAPABLE>
+   </item>
   </item>
  </item>
  <item type="EV_TITLED_WINDOW">
   <Internal_properties>
-   <id>45</id>
+   <id>48</id>
    <name>sw_main_window</name>
    <Expanded>1</Expanded>
   </Internal_properties>
@@ -280,12 +270,8 @@
   <EV_SENSITIVE>
   </EV_SENSITIVE>
   <EV_WIDGET>
-   <Minimum_width>
-    <Constant>main_width</Constant>
-   </Minimum_width>
-   <Minimum_height>
-    <Constant>main_height</Constant>
-   </Minimum_height>
+   <Minimum_width>805</Minimum_width>
+   <Minimum_height>610</Minimum_height>
   </EV_WIDGET>
   <EV_WINDOW>
    <User_can_resize>False</User_can_resize>
@@ -303,7 +289,7 @@
   </EV_CONTAINER>
   <item type="EV_VERTICAL_BOX">
    <Internal_properties>
-    <id>54</id>
+    <id>57</id>
     <name>menu</name>
     <Expanded>1</Expanded>
    </Internal_properties>
@@ -322,7 +308,7 @@
    </EV_CONTAINER>
    <item type="EV_FIXED">
     <Internal_properties>
-     <id>53</id>
+     <id>56</id>
      <Expanded>1</Expanded>
     </Internal_properties>
     <EV_COLORIZABLE>
@@ -332,7 +318,7 @@
     <EV_WIDGET>
     </EV_WIDGET>
     <EV_PIXMAPABLE>
-     <Pixmap_path>C:\Users\Andrew\Desktop\gsd_raw\export\main_window.png</Pixmap_path>
+     <Pixmap_path>C:\Users\Andrew\Documents\GitHub\dose2013\src\dose\images\group_01\main_window.png</Pixmap_path>
     </EV_PIXMAPABLE>
     <EV_FIXED>
      <Children_x_position>0620020006200620062001400540</Children_x_position>
@@ -344,7 +330,7 @@
     </EV_CONTAINER>
     <item type="EV_TEXT">
      <Internal_properties>
-      <id>46</id>
+      <id>49</id>
       <name>name</name>
       <Expanded>0</Expanded>
      </Internal_properties>
@@ -367,7 +353,7 @@
     </item>
     <item type="EV_TEXT">
      <Internal_properties>
-      <id>47</id>
+      <id>50</id>
       <name>server</name>
       <Expanded>0</Expanded>
      </Internal_properties>
@@ -390,7 +376,7 @@
     </item>
     <item type="EV_TEXT">
      <Internal_properties>
-      <id>48</id>
+      <id>51</id>
       <name>num_players</name>
       <Expanded>0</Expanded>
      </Internal_properties>
@@ -413,7 +399,7 @@
     </item>
     <item type="EV_COMBO_BOX">
      <Internal_properties>
-      <id>49</id>
+      <id>52</id>
       <name>ai_level</name>
       <Expanded>0</Expanded>
      </Internal_properties>
@@ -438,7 +424,7 @@
     </item>
     <item type="EV_TEXT">
      <Internal_properties>
-      <id>50</id>
+      <id>53</id>
       <name>round_time_limit</name>
       <Expanded>0</Expanded>
      </Internal_properties>
@@ -461,7 +447,7 @@
     </item>
     <item type="EV_FIXED">
      <Internal_properties>
-      <id>51</id>
+      <id>54</id>
       <name>join</name>
       <Expanded>0</Expanded>
      </Internal_properties>
@@ -483,7 +469,7 @@
     </item>
     <item type="EV_FIXED">
      <Internal_properties>
-      <id>52</id>
+      <id>55</id>
       <name>host</name>
       <Expanded>0</Expanded>
      </Internal_properties>
@@ -508,7 +494,7 @@
  </item>
  <item type="EV_TITLED_WINDOW">
   <Internal_properties>
-   <id>33</id>
+   <id>36</id>
    <name>sw_card_display</name>
    <Expanded>1</Expanded>
    <Is_root_window>True</Is_root_window>
@@ -528,7 +514,7 @@
   </EV_CONTAINER>
   <item type="EV_VERTICAL_BOX">
    <Internal_properties>
-    <id>44</id>
+    <id>47</id>
     <Expanded>1</Expanded>
    </Internal_properties>
    <EV_COLORIZABLE>
@@ -549,7 +535,7 @@
    </EV_CONTAINER>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>34</id>
+     <id>37</id>
      <name>cardnamelabel</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -577,7 +563,7 @@
    </item>
    <item type="EV_HORIZONTAL_BOX">
     <Internal_properties>
-     <id>41</id>
+     <id>44</id>
      <Expanded>1</Expanded>
     </Internal_properties>
     <EV_COLORIZABLE>
@@ -597,7 +583,7 @@
     </EV_CONTAINER>
     <item type="EV_CELL">
      <Internal_properties>
-      <id>36</id>
+      <id>39</id>
       <Expanded>1</Expanded>
      </Internal_properties>
      <EV_COLORIZABLE>
@@ -612,7 +598,7 @@
      </EV_CONTAINER>
      <item type="EV_LABEL">
       <Internal_properties>
-       <id>35</id>
+       <id>38</id>
        <name>age_label</name>
        <Expanded>0</Expanded>
       </Internal_properties>
@@ -635,7 +621,7 @@
     </item>
     <item type="EV_CELL">
      <Internal_properties>
-      <id>38</id>
+      <id>41</id>
       <Expanded>1</Expanded>
      </Internal_properties>
      <EV_COLORIZABLE>
@@ -650,7 +636,7 @@
      </EV_CONTAINER>
      <item type="EV_LABEL">
       <Internal_properties>
-       <id>37</id>
+       <id>40</id>
        <name>cost_label</name>
        <Expanded>0</Expanded>
       </Internal_properties>
@@ -673,7 +659,7 @@
     </item>
     <item type="EV_CELL">
      <Internal_properties>
-      <id>40</id>
+      <id>43</id>
       <Expanded>1</Expanded>
      </Internal_properties>
      <EV_COLORIZABLE>
@@ -688,7 +674,7 @@
      </EV_CONTAINER>
      <item type="EV_LABEL">
       <Internal_properties>
-       <id>39</id>
+       <id>42</id>
        <name>card_color</name>
        <Expanded>0</Expanded>
       </Internal_properties>
@@ -712,7 +698,7 @@
    </item>
    <item type="EV_VERTICAL_BOX">
     <Internal_properties>
-     <id>43</id>
+     <id>46</id>
      <Expanded>1</Expanded>
     </Internal_properties>
     <EV_COLORIZABLE>
@@ -731,7 +717,7 @@
     </EV_CONTAINER>
     <item type="EV_LABEL">
      <Internal_properties>
-      <id>42</id>
+      <id>45</id>
       <name>carddescriptionlabel</name>
       <Expanded>0</Expanded>
      </Internal_properties>
@@ -778,16 +764,12 @@ Other info:</Text>
   <EV_SENSITIVE>
   </EV_SENSITIVE>
   <EV_WIDGET>
-   <Minimum_width>
-    <Constant>main_width</Constant>
-   </Minimum_width>
-   <Minimum_height>620</Minimum_height>
+   <Minimum_width>805</Minimum_width>
+   <Minimum_height>610</Minimum_height>
   </EV_WIDGET>
   <EV_WINDOW>
    <User_can_resize>False</User_can_resize>
-   <Maximum_width>
-    <Constant>main_width</Constant>
-   </Maximum_width>
+   <Maximum_width>805</Maximum_width>
    <Maximum_height>
     <Constant>main_height</Constant>
    </Maximum_height>
@@ -801,7 +783,7 @@ Other info:</Text>
   </EV_CONTAINER>
   <item type="EV_FIXED">
    <Internal_properties>
-    <id>32</id>
+    <id>35</id>
     <Expanded>1</Expanded>
    </Internal_properties>
    <EV_COLORIZABLE>
@@ -813,19 +795,51 @@ Other info:</Text>
    <EV_WIDGET>
    </EV_WIDGET>
    <EV_PIXMAPABLE>
-    <Pixmap_path>C:\Users\Andrew\Documents\GitHub\dose2013\src\dose\images\group_01\board_window.png</Pixmap_path>
+    <Pixmap_path>C:\Users\Andrew\Documents\GitHub\dose2013\src\dose\images\group_01\board_window_empty.png</Pixmap_path>
    </EV_PIXMAPABLE>
    <EV_FIXED>
-    <Children_x_position>007000400040004000400040004000400040075303670630069200600432066001200340</Children_x_position>
-    <Children_y_position>000500450075010501350191022002500163002600280009000904200101010001000180</Children_y_position>
-    <Children_width>010000200020002000200020002000200020002000670020002006800220002005650125</Children_width>
-    <Children_height>002500200020002000200020002000200020002000420020002001600040004002500042</Children_height>
+    <Children_x_position>0000006400330033003300330033003300330033075603670033003300730072</Children_x_position>
+    <Children_y_position>0007000500480078010801370166019502240309002600280281025200970098</Children_y_position>
+    <Children_width>0060010000200020002000200020002000200020002000670020002007400740</Children_width>
+    <Children_height>0020002500200020002000200020002000200020002000420020002005800580</Children_height>
    </EV_FIXED>
    <EV_CONTAINER>
    </EV_CONTAINER>
-   <item type="EV_COMBO_BOX">
+   <item type="EV_LABEL">
     <Internal_properties>
      <id>14</id>
+     <name>desclabel</name>
+     <Expanded>0</Expanded>
+    </Internal_properties>
+    <EV_COLORIZABLE>
+     <Background_color>000000000</Background_color>
+     <Foreground_color>255255255</Foreground_color>
+    </EV_COLORIZABLE>
+    <EV_FONTABLE>
+     <Family>4</Family>
+     <Weight>7</Weight>
+     <Shape>10</Shape>
+     <Height_in_points>12</Height_in_points>
+     <Preferred_family>Viner Hand ITC</Preferred_family>
+    </EV_FONTABLE>
+    <EV_SENSITIVE>
+    </EV_SENSITIVE>
+    <EV_TEXTABLE>
+     <Text>Player</Text>
+    </EV_TEXTABLE>
+    <EV_TOOLTIPABLE>
+    </EV_TOOLTIPABLE>
+    <EV_WIDGET>
+     <Minimum_width>0</Minimum_width>
+     <Minimum_height>0</Minimum_height>
+    </EV_WIDGET>
+    <EV_TEXT_ALIGNABLE>
+     <Text_alignment>Right</Text_alignment>
+    </EV_TEXT_ALIGNABLE>
+   </item>
+   <item type="EV_COMBO_BOX">
+    <Internal_properties>
+     <id>15</id>
      <name>player_selector</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -855,7 +869,7 @@ Other info:</Text>
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>15</id>
+     <id>16</id>
      <name>res_clay</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -885,7 +899,7 @@ Other info:</Text>
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>16</id>
+     <id>17</id>
      <name>res_glass</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -915,7 +929,7 @@ Other info:</Text>
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>17</id>
+     <id>18</id>
      <name>res_loom</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -945,7 +959,7 @@ Other info:</Text>
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>18</id>
+     <id>19</id>
      <name>res_ore</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -975,7 +989,7 @@ Other info:</Text>
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>19</id>
+     <id>20</id>
      <name>res_papyrus</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -1005,7 +1019,7 @@ Other info:</Text>
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>20</id>
+     <id>21</id>
      <name>res_stone</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -1035,7 +1049,7 @@ Other info:</Text>
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>21</id>
+     <id>22</id>
      <name>res_wood</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -1065,7 +1079,7 @@ Other info:</Text>
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>22</id>
+     <id>23</id>
      <name>res_coins</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -1095,7 +1109,7 @@ Other info:</Text>
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>23</id>
+     <id>24</id>
      <name>point_victory</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -1124,7 +1138,7 @@ Other info:</Text>
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>24</id>
+     <id>25</id>
      <name>round_timer</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -1156,7 +1170,7 @@ Other info:</Text>
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>25</id>
+     <id>26</id>
      <name>conflict_tokens</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -1186,7 +1200,7 @@ Other info:</Text>
    </item>
    <item type="EV_LABEL">
     <Internal_properties>
-     <id>26</id>
+     <id>27</id>
      <name>res_military</name>
      <Expanded>0</Expanded>
     </Internal_properties>
@@ -1214,126 +1228,175 @@ Other info:</Text>
      <Text_alignment>Left</Text_alignment>
     </EV_TEXT_ALIGNABLE>
    </item>
-   <item type="EV_TEXT">
+   <item type="EV_FIXED">
     <Internal_properties>
-     <id>27</id>
-     <name>game_log</name>
-     <Expanded>0</Expanded>
+     <id>33</id>
+     <name>board_view</name>
+     <Expanded>1</Expanded>
     </Internal_properties>
     <EV_COLORIZABLE>
-     <Background_color>000000000</Background_color>
-     <Foreground_color>255255255</Foreground_color>
     </EV_COLORIZABLE>
-    <EV_FONTABLE>
-     <Family>3</Family>
-     <Weight>7</Weight>
-     <Shape>10</Shape>
-     <Height_in_points>9</Height_in_points>
-     <Preferred_family>Tahoma</Preferred_family>
-    </EV_FONTABLE>
     <EV_SENSITIVE>
     </EV_SENSITIVE>
-    <EV_TEXTABLE>
-     <Text>Game log</Text>
-    </EV_TEXTABLE>
-    <EV_TOOLTIPABLE>
-    </EV_TOOLTIPABLE>
     <EV_WIDGET>
+     <Is_show_requested>False</Is_show_requested>
+     <Minimum_width>50</Minimum_width>
+     <Minimum_height>50</Minimum_height>
     </EV_WIDGET>
-    <EV_TEXT_COMPONENT>
-     <Is_editable>False</Is_editable>
-    </EV_TEXT_COMPONENT>
-   </item>
-   <item type="EV_LABEL">
-    <Internal_properties>
-     <id>28</id>
-     <name>stage_label</name>
-     <Expanded>0</Expanded>
-    </Internal_properties>
-    <EV_COLORIZABLE>
-     <Background_color>000000000</Background_color>
-     <Foreground_color>255255255</Foreground_color>
-    </EV_COLORIZABLE>
-    <EV_FONTABLE>
-     <Family>4</Family>
-     <Weight>7</Weight>
-     <Shape>10</Shape>
-     <Height_in_points>24</Height_in_points>
-     <Preferred_family>Viner Hand ITC</Preferred_family>
-    </EV_FONTABLE>
-    <EV_SENSITIVE>
-    </EV_SENSITIVE>
-    <EV_TEXTABLE>
-     <Text>Wonder Level</Text>
-    </EV_TEXTABLE>
-    <EV_TOOLTIPABLE>
-    </EV_TOOLTIPABLE>
-    <EV_WIDGET>
-     <Minimum_width>0</Minimum_width>
-     <Minimum_height>0</Minimum_height>
-    </EV_WIDGET>
-    <EV_TEXT_ALIGNABLE>
-     <Text_alignment>Right</Text_alignment>
-    </EV_TEXT_ALIGNABLE>
-   </item>
-   <item type="EV_LABEL">
-    <Internal_properties>
-     <id>29</id>
-     <name>wonder_level</name>
-     <Expanded>0</Expanded>
-    </Internal_properties>
-    <EV_COLORIZABLE>
-     <Background_color>000000000</Background_color>
-     <Foreground_color>000128192</Foreground_color>
-    </EV_COLORIZABLE>
-    <EV_FONTABLE>
-     <Family>4</Family>
-     <Weight>8</Weight>
-     <Shape>10</Shape>
-     <Height_in_points>24</Height_in_points>
-     <Preferred_family>Viner Hand ITC</Preferred_family>
-    </EV_FONTABLE>
-    <EV_SENSITIVE>
-    </EV_SENSITIVE>
-    <EV_TEXTABLE>
-     <Text>0</Text>
-    </EV_TEXTABLE>
-    <EV_TOOLTIPABLE>
-    </EV_TOOLTIPABLE>
-    <EV_WIDGET>
-     <Minimum_width>10</Minimum_width>
-     <Minimum_height>10</Minimum_height>
-    </EV_WIDGET>
-    <EV_TEXT_ALIGNABLE>
-     <Text_alignment>Left</Text_alignment>
-    </EV_TEXT_ALIGNABLE>
-   </item>
-   <item type="EV_PIXMAP">
-    <Internal_properties>
-     <id>30</id>
-     <name>wonder_image</name>
-     <Expanded>0</Expanded>
-    </Internal_properties>
-    <EV_COLORIZABLE>
-     <Background_color>000000000</Background_color>
-     <Foreground_color>255255255</Foreground_color>
-    </EV_COLORIZABLE>
-    <EV_FONTABLE>
-    </EV_FONTABLE>
-    <EV_SENSITIVE>
-    </EV_SENSITIVE>
-    <EV_TOOLTIPABLE>
-    </EV_TOOLTIPABLE>
-    <EV_WIDGET>
-    </EV_WIDGET>
-    <EV_PIXMAP>
-     <Pixmap_path>C:\Users\Andrew\Dropbox\7wonders-assets\assets\wonders\0a.png</Pixmap_path>
-    </EV_PIXMAP>
+    <EV_PIXMAPABLE>
+     <Pixmap_path>C:\Users\Andrew\Documents\GitHub\dose2013\src\dose\images\group_01\board_window_boardview.png</Pixmap_path>
+    </EV_PIXMAPABLE>
+    <EV_FIXED>
+     <Children_x_position>00800300061903910020</Children_x_position>
+     <Children_y_position>00000100000200010320</Children_y_position>
+     <Children_width>05650125002002200680</Children_width>
+     <Children_height>02500042004000400160</Children_height>
+    </EV_FIXED>
+    <EV_CONTAINER>
+    </EV_CONTAINER>
+    <item type="EV_PIXMAP">
+     <Internal_properties>
+      <id>28</id>
+      <name>wonder_image</name>
+      <Expanded>0</Expanded>
+     </Internal_properties>
+     <EV_COLORIZABLE>
+      <Background_color>000000000</Background_color>
+      <Foreground_color>255255255</Foreground_color>
+     </EV_COLORIZABLE>
+     <EV_FONTABLE>
+     </EV_FONTABLE>
+     <EV_SENSITIVE>
+     </EV_SENSITIVE>
+     <EV_TOOLTIPABLE>
+     </EV_TOOLTIPABLE>
+     <EV_WIDGET>
+     </EV_WIDGET>
+     <EV_PIXMAP>
+      <Pixmap_path>C:\Users\Andrew\Dropbox\7wonders-assets\assets\wonders\0a.png</Pixmap_path>
+     </EV_PIXMAP>
+    </item>
+    <item type="EV_FIXED">
+     <Internal_properties>
+      <id>29</id>
+      <name>show_hand_button</name>
+      <Expanded>0</Expanded>
+     </Internal_properties>
+     <EV_COLORIZABLE>
+     </EV_COLORIZABLE>
+     <EV_SENSITIVE>
+     </EV_SENSITIVE>
+     <EV_WIDGET>
+      <Minimum_width>125</Minimum_width>
+      <Minimum_height>42</Minimum_height>
+     </EV_WIDGET>
+     <EV_PIXMAPABLE>
+      <Pixmap_path>C:\Users\Andrew\Documents\GitHub\dose2013\src\dose\images\group_01\show_hand_normal.png</Pixmap_path>
+     </EV_PIXMAPABLE>
+     <EV_FIXED>
+     </EV_FIXED>
+     <EV_CONTAINER>
+     </EV_CONTAINER>
+    </item>
+    <item type="EV_LABEL">
+     <Internal_properties>
+      <id>30</id>
+      <name>wonder_level</name>
+      <Expanded>0</Expanded>
+     </Internal_properties>
+     <EV_COLORIZABLE>
+      <Background_color>000000000</Background_color>
+      <Foreground_color>000128192</Foreground_color>
+     </EV_COLORIZABLE>
+     <EV_FONTABLE>
+      <Family>4</Family>
+      <Weight>8</Weight>
+      <Shape>10</Shape>
+      <Height_in_points>24</Height_in_points>
+      <Preferred_family>Viner Hand ITC</Preferred_family>
+     </EV_FONTABLE>
+     <EV_SENSITIVE>
+     </EV_SENSITIVE>
+     <EV_TEXTABLE>
+      <Text>0</Text>
+     </EV_TEXTABLE>
+     <EV_TOOLTIPABLE>
+      <Tooltip>The progress of your Wonder. Each level gives you rewards as displayed on the card.</Tooltip>
+     </EV_TOOLTIPABLE>
+     <EV_WIDGET>
+      <Minimum_width>10</Minimum_width>
+      <Minimum_height>10</Minimum_height>
+     </EV_WIDGET>
+     <EV_TEXT_ALIGNABLE>
+      <Text_alignment>Left</Text_alignment>
+     </EV_TEXT_ALIGNABLE>
+    </item>
+    <item type="EV_LABEL">
+     <Internal_properties>
+      <id>31</id>
+      <name>stage_label</name>
+      <Expanded>0</Expanded>
+     </Internal_properties>
+     <EV_COLORIZABLE>
+      <Background_color>000000000</Background_color>
+      <Foreground_color>255255255</Foreground_color>
+     </EV_COLORIZABLE>
+     <EV_FONTABLE>
+      <Family>4</Family>
+      <Weight>7</Weight>
+      <Shape>10</Shape>
+      <Height_in_points>24</Height_in_points>
+      <Preferred_family>Viner Hand ITC</Preferred_family>
+     </EV_FONTABLE>
+     <EV_SENSITIVE>
+     </EV_SENSITIVE>
+     <EV_TEXTABLE>
+      <Text>Wonder Level</Text>
+     </EV_TEXTABLE>
+     <EV_TOOLTIPABLE>
+     </EV_TOOLTIPABLE>
+     <EV_WIDGET>
+      <Minimum_width>0</Minimum_width>
+      <Minimum_height>0</Minimum_height>
+     </EV_WIDGET>
+     <EV_TEXT_ALIGNABLE>
+      <Text_alignment>Right</Text_alignment>
+     </EV_TEXT_ALIGNABLE>
+    </item>
+    <item type="EV_TEXT">
+     <Internal_properties>
+      <id>32</id>
+      <name>game_log</name>
+      <Expanded>0</Expanded>
+     </Internal_properties>
+     <EV_COLORIZABLE>
+      <Background_color>200162119</Background_color>
+     </EV_COLORIZABLE>
+     <EV_FONTABLE>
+      <Family>3</Family>
+      <Weight>7</Weight>
+      <Shape>10</Shape>
+      <Height_in_points>9</Height_in_points>
+      <Preferred_family>Tahoma</Preferred_family>
+     </EV_FONTABLE>
+     <EV_SENSITIVE>
+     </EV_SENSITIVE>
+     <EV_TEXTABLE>
+      <Text>-- Turn log --</Text>
+     </EV_TEXTABLE>
+     <EV_TOOLTIPABLE>
+     </EV_TOOLTIPABLE>
+     <EV_WIDGET>
+     </EV_WIDGET>
+     <EV_TEXT_COMPONENT>
+      <Is_editable>False</Is_editable>
+     </EV_TEXT_COMPONENT>
+    </item>
    </item>
    <item type="EV_FIXED">
     <Internal_properties>
-     <id>31</id>
-     <name>show_hand_button</name>
+     <id>34</id>
+     <name>hand_view</name>
      <Expanded>0</Expanded>
     </Internal_properties>
     <EV_COLORIZABLE>
@@ -1341,11 +1404,11 @@ Other info:</Text>
     <EV_SENSITIVE>
     </EV_SENSITIVE>
     <EV_WIDGET>
-     <Minimum_width>125</Minimum_width>
-     <Minimum_height>42</Minimum_height>
+     <Minimum_width>50</Minimum_width>
+     <Minimum_height>50</Minimum_height>
     </EV_WIDGET>
     <EV_PIXMAPABLE>
-     <Pixmap_path>C:\Users\Andrew\Documents\GitHub\dose2013\src\dose\images\group_01\show_hand_normal.png</Pixmap_path>
+     <Pixmap_path>C:\Users\Andrew\Documents\GitHub\dose2013\src\dose\images\group_01\board_window_handview.png</Pixmap_path>
     </EV_PIXMAPABLE>
     <EV_FIXED>
     </EV_FIXED>
